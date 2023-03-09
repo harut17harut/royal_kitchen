@@ -1,0 +1,25 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Menu Entity"""
+type MenuEntity {
+  id: ID!
+  name: String!
+  categoryId: String!
+  flavors: [String!]!
+}
+
+type Query {
+  menus: [MenuEntity!]!
+  menu(id: Float!): MenuEntity!
+}
+
+type Mutation {
+  createMenu(createMenuInput: CreateMenuItemDTO!): MenuEntity
+}
+
+"""Create menu item DTO"""
+input CreateMenuItemDTO {
+  name: String!
+}
