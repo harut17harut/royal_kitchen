@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CoffeeResolver } from './menu.resolver';
+import { CoffeeResolver } from './User.resolver';
 
 describe('CoffeeResolver', () => {
   let resolver: CoffeeResolver;

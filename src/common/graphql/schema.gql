@@ -2,24 +2,13 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-"""Menu Entity"""
-type MenuEntity {
+"""User Entity"""
+type UserEntity {
   id: ID!
-  name: String!
-  categoryId: String!
-  flavors: [String!]!
+  firstName: String!
 }
 
 type Query {
-  menus: [MenuEntity!]!
-  menu(id: Float!): MenuEntity!
-}
-
-type Mutation {
-  createMenu(createMenuInput: CreateMenuItemDTO!): MenuEntity
-}
-
-"""Create menu item DTO"""
-input CreateMenuItemDTO {
-  name: String!
+  Users: [UserEntity!]!
+  UserById(id: Float!): UserEntity
 }
